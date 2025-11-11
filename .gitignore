@@ -26,9 +26,9 @@ Package.resolved
 
 # Output files (captured data)
 captures/
-*.ndjson
-*.csv
-*.png
+
+# Don't ignore extension icons
+!chrome-extension/icon*.png
 
 # Temporary files
 *.tmp
