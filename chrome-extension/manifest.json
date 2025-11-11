@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Desktop Capture Helper",
+  "version": "0.1.0",
+  "description": "Captures click data from LinkedIn and X/Twitter posts for Desktop Capture app",
+  "permissions": [
+    "nativeMessaging",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://www.linkedin.com/*",
+    "https://linkedin.com/*",
+    "https://twitter.com/*",
+    "https://x.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.linkedin.com/*",
+        "https://linkedin.com/*"
+      ],
+      "js": ["content-linkedin.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://twitter.com/*",
+        "https://x.com/*"
+      ],
+      "js": ["content-twitter.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

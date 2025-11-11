@@ -1,0 +1,9 @@
+{
+  "name": "com.desktopcapture.host",
+  "description": "Desktop Capture Native Messaging Host",
+  "path": "/REPLACE_WITH_ACTUAL_PATH/DesktopCapture",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://REPLACE_WITH_EXTENSION_ID/"
+  ]
+}

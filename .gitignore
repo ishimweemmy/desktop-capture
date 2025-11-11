@@ -1,0 +1,49 @@
+# Build artifacts
+build/
+native-app/.build/
+native-app/.swiftpm/
+*.xcodeproj
+*.xcworkspace
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Xcode
+xcuserdata/
+*.xcuserstate
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+Packages/
+Package.pins
+Package.resolved
+
+# Output files (captured data)
+captures/
+*.ndjson
+*.csv
+*.png
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Chrome extension temporary files
+chrome-extension/*.crx
+chrome-extension/*.pem
+
+# Logs
+*.log
