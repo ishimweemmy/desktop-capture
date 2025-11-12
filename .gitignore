@@ -1,9 +1,17 @@
 # Build artifacts
 build/
+build-windows/
 native-app/.build/
 native-app/.swiftpm/
 *.xcodeproj
 *.xcworkspace
+
+# Windows .NET build artifacts
+native-app-windows/bin/
+native-app-windows/obj/
+*.user
+*.suo
+*.cache
 
 # macOS
 .DS_Store

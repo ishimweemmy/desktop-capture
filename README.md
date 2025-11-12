@@ -1,6 +1,6 @@
 # Desktop Capture App with Chrome Integration (v0)
 
-A native macOS application that captures screenshots at configurable intervals and logs detailed information about user clicks, with deep integration for Chrome browser content (LinkedIn and X/Twitter posts).
+A cross-platform desktop application (Windows & macOS) that captures screenshots at configurable intervals and logs detailed information about user clicks, with deep integration for Chrome browser content (LinkedIn and X/Twitter posts).
 
 ## Features
 
@@ -10,22 +10,47 @@ A native macOS application that captures screenshots at configurable intervals a
 - **PDF Support**: Extract file paths from PDFs opened in Preview or Adobe Reader
 - **Multi-Monitor**: Full support for multiple displays with display ID tracking
 - **Structured Output**: Daily folders with timestamped screenshots, NDJSON and CSV logs
+- **Cross-Platform**: Native implementations for both Windows and macOS
+
+## Platform-Specific Documentation
+
+- **Windows Users**: See [README-WINDOWS.md](README-WINDOWS.md) for Windows-specific instructions
+- **macOS Users**: Continue reading below or see [README.md](README.md)
 
 ## System Requirements
 
+### macOS
 - macOS 13.0 (Ventura) or later
 - Google Chrome browser
-- Xcode 14+ (for building from source)
+- Xcode Command Line Tools (for building from source)
+
+### Windows
+- Windows 10 or Windows 11
+- .NET 6.0 SDK or later
+- Google Chrome browser
+- Administrator privileges (for global click monitoring)
 
 ## Installation
 
-### 1. Build the Native App
+### macOS Installation
+
+#### 1. Build the Native App
 
 ```bash
 ./build.sh
 ```
 
 This will compile the macOS app and place it in `build/DesktopCapture.app`.
+
+### Windows Installation
+
+#### 1. Build the Native App
+
+```cmd
+build-windows.bat
+```
+
+This will compile the Windows app and place it in `build-windows\DesktopCapture.exe`.
 
 ### 2. Grant Permissions
 
